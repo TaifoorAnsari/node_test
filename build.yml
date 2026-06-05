@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches:
-      - main
+      - SCRUM-2-Task-2
 
 jobs:
   build:
