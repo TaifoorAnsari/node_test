@@ -10,5 +10,10 @@ app.post('/todos', (req, res) => {
   res.json({ message: 'Task added' });
 });
 
-app.listen(3000, () => console.log('App running on port 3000'));
+if (require.main === module) {
+  app.listen(3000, () => {
+    console.log('App running on port 3000');
+  });
+}
+
 module.exports = app;
